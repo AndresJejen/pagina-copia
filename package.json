@@ -16,10 +16,12 @@
   "author": "Beitlab",
   "license": "MIT",
   "dependencies": {
-    "ejs": "^2.6.1",
-    "express": "^4.16.4",
     "@tensorflow-models/coco-ssd": "0.1.1",
     "@tensorflow/tfjs": "0.14.0",
+    "dotenv": "^6.2.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.7",
     "morgan": "^1.9.0"
   },
   "devDependencies": {
