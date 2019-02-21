@@ -10,13 +10,17 @@
 .InfoDemo{
     width: 50%;
     float: left;
-    padding: 20px;
+    padding: 10px;
     height: 100%;
     box-sizing: border-box;
 }
 
+.InfoDemo h2{
+    color: #0277bd;
+}
+
 .InfoDemo p{
-    color: white;
+    color: black;
 }
 
 .style{

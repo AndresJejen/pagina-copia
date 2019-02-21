@@ -8,6 +8,34 @@ import style from "./style.css";
 class App extends React.Component {
   videoRef = React.createRef();
   canvasRef = React.createRef();
+  
+  espera(){
+    const ctx = this.canvasRef.current.getContext("2d");
+    const ctxwidth = ctx.canvas.width;
+    var i = 0;
+    var refreshIntervalId;
+
+    ctx.fillStyle = "#FFFFFF";
+    ctx.fillRect(0,0,ctx.canvas.width,ctx.canvas.height);
+    const font = "30px sans-serif";
+    ctx.font = font;
+    ctx.textBaseline = "top";
+    ctx.fillStyle = "#000000";
+    const left = (ctx.canvas.width-ctx.measureText("Cargando Demo").width)/2;
+    ctx.fillText("Cargando Demo", left, ctx.canvas.height/2);
+
+    ctx.strokeStyle = "#0277bd";
+    refreshIntervalId = setInterval(()=>{
+      if (i <= ctxwidth){
+          ctx.strokeRect(i,ctx.canvas.height/4,5,5);
+          ctx.strokeRect(ctxwidth - i,ctx.canvas.height*0.75,5,5);
+          i += 10;
+      }
+      else{
+          clearInterval(refreshIntervalId);
+      }
+  },100)
+  }
 
   componentDidMount() {
     if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
@@ -28,7 +56,7 @@ class App extends React.Component {
           });
         });
       const modelPromise = cocoSsd.load();
-      console.log('Modelo cargado y listo');
+      this.espera();
       Promise.all([modelPromise, webCamPromise])
         .then(values => {
           this.detectFrame(this.videoRef.current, values[0]);
@@ -50,7 +78,6 @@ class App extends React.Component {
 
   renderPredictions = predictions => {
     const ctx = this.canvasRef.current.getContext("2d");
-
     ctx.canvas.width = this.videoRef.current.clientWidth;
     ctx.canvas.height = this.videoRef.current.clientHeight;
     const factor = ctx.canvas.width/600;
@@ -103,8 +130,23 @@ class App extends React.Component {
           />  
         </section>
         <aside className="InfoDemo">
+          <h2>
+              Video Analítica
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta nulla tenetur obcaecati, perferendis nam cupiditate provident praesentium, officia inventore aut, minus beatae a quam iste quod. Culpa, vitae dolor?Esse placeat, ducimus nulla voluptatum dolores libero ratione accusamus nesciunt reiciendis inventore adipisci illum porro provident veritatis laborum laudantium nemo? Obcaecati, veniam. Fugit, quasi molestiae. Eaque laudantium deserunt minima laboriosam?
+            USTEDES QUE ESCRIBIRIAN <br/>
+            USTEDES QUE ESCRIBIRIAN <br/>
+            USTEDES QUE ESCRIBIRIAN <br/>
+            USTEDES QUE ESCRIBIRIAN <br/>
+            USTEDES QUE ESCRIBIRIAN <br/>
+            USTEDES QUE ESCRIBIRIAN <br/>
+          </p>
+          <p>
+            <b>Nombre del Modelo: </b> Coco Sd - Object detection API<br/>
+            <b>Autor de Modelo ML: </b> <a href="https://js.tensorflow.org">Tensorflow js</a> <br/>
+            <b>Código original: </b> <a href="https://github.com/tensorflow/tfjs-models/tree/master/coco-ssd">Github - Tensorflow js</a> <br/>
+            <b>Licencia: </b> <a href="https://github.com/tensorflow/tfjs-models/blob/master/LICENSE">Apache License 2.0</a> <br/>
+            <b>Nota: </b> Beitlab actua como divulgador de las tecnologias libres de tensorflow reconociendo oficialmente la originalidad de los desarrollos de terceros.<br/>
           </p>
         </aside>
       </section>

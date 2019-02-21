@@ -3654,8 +3654,17 @@ footer .row {
 
 
 /*Demos*/
-.DemoBody{
+.headerDemos{
+    width: 100%;
+    height: 50px;
     background-color: #0277bd;
+    position: absolute;
+    top: 0;
+    z-index: 500;
+}
+
+.DemoBody{
+    background-color: #e3e4e5;
 }
 
 .HeaderDemos{
@@ -3664,7 +3673,7 @@ footer .row {
 
 .HeaderDemos h1{
     font-size: 5rem;
-    color: white;
+    color: #0277bd;
     text-align: center;
 }
 
@@ -3721,8 +3730,6 @@ footer .row {
     font-size: 5rem;
     color: white;
 }
-
-
 
 .fin{
     padding: 30px;
