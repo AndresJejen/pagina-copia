@@ -1,5 +1,29 @@
+.Demo{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 100px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.InfoDemo{
+    width: 50%;
+    float: left;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.InfoDemo p{
+    color: white;
+}
+
 .style{
-    position: absolute;
-    top: 0;
-    left: 0;
+    border: 3px dashed black;
+    position : absolute;
+    top : 50%;
+    left : 50%;
+    transform: translate(-50%, -15%);
+    -webkit-transform: translate(-50%, -15%);
 }

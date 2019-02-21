@@ -3654,14 +3654,40 @@ footer .row {
 
 
 /*Demos*/
-
-.Demo{
-    top : 200px;
-    height: 500px;
-    width: 600px;
-    margin: auto;
-    position: relative;
+.DemoBody{
+    background-color: #0277bd;
 }
+
+.HeaderDemos{
+    height: 10%;
+}
+
+.HeaderDemos h1{
+    font-size: 5rem;
+    color: white;
+    text-align: center;
+}
+
+.generalDemos{
+    position:relative;
+    margin:auto;
+    width: 90%;
+    height: 60%;
+}
+
+.PieDemo{
+    position: fixed;
+    bottom: 0;
+    background-color: #111111;
+    clear:both;
+    width: 100%;
+    height: 15%;
+    padding:20px;
+    box-sizing: border-box;
+}
+
+
+
 
 /* cambios */
 
@@ -3695,6 +3721,8 @@ footer .row {
     font-size: 5rem;
     color: white;
 }
+
+
 
 .fin{
     padding: 30px;
@@ -3737,7 +3765,7 @@ footer .row {
     .video1{
         position: relative;
         width: 100%;
-        padding-bottom: 56.25%; 
+        padding-bottom: 25%; 
         height: 0;
     }
     
@@ -3748,7 +3776,23 @@ footer .row {
         width: 100%;
         height: 100%;
     }
+
+    .video1 canvas{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
     
+    .video1 video{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
     .descripcion1{
         margin-top : 20px;  
         width: 100%;
