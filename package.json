@@ -16,6 +16,7 @@
   "author": "Beitlab",
   "license": "MIT",
   "dependencies": {
+    "@google-cloud/firestore": "^1.0.1",
     "@tensorflow-models/coco-ssd": "0.1.1",
     "@tensorflow/tfjs": "0.14.0",
     "dotenv": "^6.2.0",

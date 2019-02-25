@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "beitlabpage-229801",
+  "private_key_id": "4adcdc3684ca3655e42e3c98080eca27ba1b2723",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC6GQWMKHnUqYAQ\ntQAb30CIVCJw5hqVV2+054JNq1833gr/Qn2yCJqUo8ETzlK2/qxSo58vvLrPNVRS\nrrUXC7FntRkZkyuRVlJbZu61kAQAb+iTCKcUFfeCjyB2JWOGGydz3uhOAXZffVtA\necpoTgvkkG5nqGWKSNvXTRWa4MoyBqFKNcRNcyOyAOZXhe37flQ2iVJ5sxt4Tg/d\nJfk2aVj8eUwLUeZJbgCJ3HNO5L+Y6NrwiDZ/QaeQWEJXjzrRD7Nl/YzDcWb/3eYL\n6mIDRCRebT3838dDRddstVFVs2WWeszG1xPhLAQ+l0hj7vIrhgD/mNVuv/9mTGio\nguPVk8mfAgMBAAECggEAENq2SWjbC9skGZ9C+MNB9XblPaNhcfgeylwTTZSBRa6L\nAW5Usvybf23LTU9o52DuW3etMaYepyiVz/05snIhKZrZwJq3He0a/WM3qGL4Mc/w\n2Ow2MZgBuCXdU0X0mw83hgOAt5vjTCeuzYqaPdMfuZ4pGaNDOwB5RKkbFVFZjqkq\ngAGpt0h3/ArngxdrLA6MoHtWK/AKjepwP9u6EEd9NJNjVcpx3Bck0yWPI/5RspsO\npi2htgSf1Tvrtk1tNfazKnaxAWpMekRvQ4QqSV3ZIrQPwrqSc3MqMEQLSt+eFscC\nvMoZitHxWw6qto0mfXp4XjLoiRtsospvCvRIDmsaTQKBgQDh+BtLhNYTLfjtGbMm\nmcbXNcqTYtntk7jhFn921b65Y9FgaIkVoIkk7f6V7NIpCjmw7YqpFVsaltbDKayC\nPjJ2jEJtQHG2arCn7GaU10hHWz41wbgEOH5z4nZ2XTiqkLFSZkFX3ZbWyUFwwru7\ncbETpXI5Y6Y3+jobE71K5wSNNQKBgQDS1GolPhexq/P694Yf+PGTsChdsG0d2avM\nJU0J75kc+S10rLxHe3S+hsfrrbQPTc4kaojCoUl5+1l5Y+D5QJjT0jX7K3lofM/X\ntlg6DYyx4UDTMJh5p6kP71U8yzJLeHdbdiKxCnDrQNhBuIoZFv60m1+eIm+ZDDuh\nCwrzUwvaAwKBgEZ2a2x9G5QXfcvRe7/Jq+tn5qdW58XhjoEB1vVjaXm92ohJkJWh\n3aIaZIyzsEUD30GAkQBwnFwKNSXeVOC4LFwzGHOg6NSNKFD0sngvOWam2RtCMPN/\n+k6Ai5gVMZpeTCz5nd6cRnDriPB0iL3GkgUiTh//JtHFwWC4Iwq8RvsRAoGBAMm+\nvAgBX/kDu8fHPtCvjrQt2KK2pePvnIcQlqTQYysngojolo6so62CGiL7qJcQdBfC\n3jWo0z/n9tnDas/5MYVY3ZEJK/eBn/4inlCHEMBS9Y5iLTYU6yG1e1JeezVfBJA/\n/rh9bkqgVZCmP3f82iUHnTscZsAExba4c3UeXfPzAoGBAJL5vDRD7/YXgNwpxwwP\nXx3oBmF3g4bRrJG93Z4qIlkTuOQf8CAdX0ky/Dc3KApekISipf/ZDeuSi23WF+Rp\n4W1+jwIUnlEg13Rd76GU5ZiP9tZP+aQcJkILAShp2TlBJXvVbhOC+rtpdkG9zSLv\nJ1a7lvR6YfDWEBKq+Dgwmff+\n-----END PRIVATE KEY-----\n",
+  "client_email": "firestorebeitlabpage@beitlabpage-229801.iam.gserviceaccount.com",
+  "client_id": "108234999567573948865",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/firestorebeitlabpage%40beitlabpage-229801.iam.gserviceaccount.com"
+}

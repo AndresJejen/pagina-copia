@@ -4,20 +4,34 @@
 const app = require('./app')            //Importa el servidor app
 const path = require('path')            //Importa la libreria de rutas
 const config = require('./config')      //Importa el modulo de configuraciones globales
-const mongoose = require('mongoose');
+const Firestore = require('@google-cloud/firestore');
 
-//Conexion Base de datos y lanzamiento del servidor
-mongoose.connect(`mongodb://${config.MONGODB_USER}:${config.MONGODB_PASSWORD}@${config.MONGODB_CONNSTR}:${process.env.MONGODB_PORT}/${config.MONGODB_DB}`,
-{
-  useNewUrlParser:true
-})
-  .then(() => {
-        console.log('Connection to MLab MongoDb successful OK')
-        //Ejecución del servidor
-        app.listen(config.port,(err)=>{
-            console.log(`Servidor ejecutandose en http://${app.address().address}:${config.port}`)
-        });        
-    })
-  .catch((err) => {
-    console.error(err);
+const firestore = new Firestore({
+  projectId: 'beitlabpage-229801',
+  keyFilename: 'BeitLabPage-4adcdc3684ca.json',
 });
+
+//const document = firestore.doc('post/intro-to-firestore');
+const document = firestore.collection('Demos');
+// document.get()
+//     .then((snapshot) => {
+//       snapshot.forEach((doc) => {
+//         console.log(doc.id, '=>', doc.data());
+//       });
+//     })
+//     .catch((err) => {
+//       console.log('Error getting documents', err);
+//     });
+
+    document.get().then((snapshot)=>{
+      snapshot.forEach((doc)=>{
+        console.log(doc.data().Creado_Por);
+      });
+    })
+    .catch((err) => {
+      console.log('Error getting documents', err);
+    });
+
+app.listen(config.port,(err)=>{
+    console.log(`Servidor ejecutandose en http://${app.address().address}:${config.port}`)
+});        
