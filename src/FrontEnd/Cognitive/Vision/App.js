@@ -55,14 +55,14 @@ class App extends React.Component {
             };
           });
         });
-      const modelPromise = cocoSsd.load();
+      const modelPromise = cocoSsd.load('lite_mobilenet_v2');
       this.espera();
       Promise.all([modelPromise, webCamPromise])
         .then(values => {
           this.detectFrame(this.videoRef.current, values[0]);
         })
         .catch(error => {
-          console.error(error);
+          console.log(error);
         });
     }
   }
@@ -134,9 +134,6 @@ class App extends React.Component {
               Video Analítica
           </h2>
           <p>
-            USTEDES QUE ESCRIBIRIAN <br/>
-            USTEDES QUE ESCRIBIRIAN <br/>
-            USTEDES QUE ESCRIBIRIAN <br/>
             USTEDES QUE ESCRIBIRIAN <br/>
             USTEDES QUE ESCRIBIRIAN <br/>
             USTEDES QUE ESCRIBIRIAN <br/>
